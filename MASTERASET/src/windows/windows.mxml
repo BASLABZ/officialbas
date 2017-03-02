@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		 xmlns:s="library://ns.adobe.com/flex/spark" 
+		 xmlns:mx="library://ns.adobe.com/flex/mx" width="400" height="300">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+</s:Group>
+<mx:Script>
+	<![CDATA[
+	private function TampilFullScreen():void{
+	this.stage.displayState=StageDisplayState.FULL_SCREEN;
+	}
+	private function TampilNormal():void{
+	this.stage.displayState=StageDisplayState.NORMAL;
+	}
+	]]>
+</mx:Script>
+<mx:Button label="close" click="close()" x="171.5" y="156"/>
+<mx:Button label="FullScreen" click="TampilFullScreen()" x="156.5" y="79"/>
+<mx:Button label="NormalScreen" click="TampilNormal()" x="146" y="109"/>
+</mx:Window>

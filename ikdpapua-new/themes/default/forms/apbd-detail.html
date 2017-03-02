@@ -1,0 +1,59 @@
+		<!-- START RESPONSIVE TABLES -->
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel panel-default">
+
+					<div class="panel-heading">
+						<h3 class="panel-title">Ringkasan APBD {KABUPATEN} Tahun {TAHUN}</h3>
+					</div>
+
+					<div class="panel-body panel-body-table">
+                      <div class='table-responsive'>
+					    <form action='#' name='frmAPBD' class='frmAPBD' method='post' accept-charset='UTF-8'>
+							<input type='hidden' name='kodepemda' value='{KODEPEMDA}'>
+							<input type='hidden' name='tahun' value='{TAHUN}'>
+							<input type='hidden' name='do' value='{DO}'>
+							<table id='tblAPBD' class='table table-hover table-condensed table-bordered table-striped table-actions' style='font-size: 12px;' >
+							<thead >
+							<tr>
+								<th style='vertical-align: middle;' rowspan="2" class="text-center" >Nomor Urut</th>
+								<th style='vertical-align: middle;' rowspan="2" class="text-center" >Uraian</th>
+								<th colspan="2" class="text-center" >Jumlah(Rp)</th>
+								<th colspan="2" class="text-center perubahan" >Bertambah/Berkurang</tr>
+							</tr>
+							<tr>
+								<th class="text-center perubahan" >Sebelum<br />Perubahan</th>
+								<th class="text-center perubahan" >Sesudah<br />Perubahan</th>
+								<th class="text-center perubahan" >(Rp)</th>
+								<th class="text-center perubahan" >%</th>
+							</tr>
+							</thead>
+
+							<tbody id='tbodyData'>
+								{ROWDATA}
+							</tbody>
+							</table>
+						</form>
+                      </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END RESPONSIVE TABLES -->	
+		<!-- START MENU -->		
+		<div class='row'>
+		  <div class='col-md-12'>
+			<div class='panel panel-default'>
+				<div class='panel-body'>
+				<button class='btn btn-success btn-sm btnEdit' data-toggle='tooltip' data-placement='bottom' title='' data-original-title='Edit APBD'><i class='fa fa-edit'></i> Edit</button>
+				<button class='btn btn-danger btn-sm btnHapus' data-toggle='tooltip' data-placement='bottom' title='' data-original-title='Hapus APBD'><i class='fa fa-trash-o'></i> Hapus</button>
+				<button class='btn btn-warning btn-sm btnPerubahan' data-toggle='tooltip' data-placement='bottom' title='' data-original-title='Perubahan APBD'><i class='fa fa fa-sitemap'></i> Perubahan</button>
+				<button class='btn btn-success btn-sm btnSimpan' style='display:none;' data-toggle='tooltip' data-placement='bottom' title='' data-original-title='Simpan'><i class='fa fa-edit'></i> Simpan</button>
+				<button class='btn btn-success btn-sm btnBatal' style='display:none;' data-toggle='tooltip' data-placement='bottom' title='' data-original-title='Batal'><i class='fa fa-edit'></i> Batal</button>
+				<a href='{ROOT_URL}apbd.htm' class='btn btn-success btn-sm' data-toggle='tooltip' data-placement='bottom' title='' data-original-title='Kembali'><i class='fa fa-chevron-left'></i> Kembali</a>
+
+				</div>
+			</div>
+		  </div>
+		</div>	
+		<!-- END MENU -->	

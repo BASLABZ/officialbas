@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="row">
+            <label style="padding-top:5px;" class="col-md-2 control-label">Tahun : {TAHUN}</label>
+            <label style="padding-top:5px;" class="col-md-2 control-label">Kabupaten/Kota</label>
+            <div style="padding-bottom:10px;" class="col-md-4">
+                <select id="kodepemda" class="form-control select" onChange="getGraf(this.value);">
+                    {SELECT_KABUPATEN}
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <!-- START LINE CHART -->
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title">{PAGETITLE}</h3>
+                <ul class="panel-controls">
+                    <li><a href="#" class="panel-fullscreen"><span class="fa fa-expand"></span></a></li>
+                    <li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span></a></li>
+                </ul>                                
+            </div>
+            <div class="panel-body">
+                <div id="otsus-trf" style="height: 300px;"></div>
+            </div>
+        </div>
+        <!-- END LINE CHART -->
+    </div>
+</div>

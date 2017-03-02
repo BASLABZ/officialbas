@@ -1,0 +1,5 @@
+RewriteEngine on
+Options -Indexes
+RewriteRule ^([^/]+).html index.php?hal=$1
+RewriteRule ^([^/]+)/([^/]+)/([^/]+).html index.php?hal=$1&id=$2
+RewriteRule ^([^/]+)/([^/]+)/([^/]+)/([^/]+).html index.php?hal=$1&id=$2&cmd=hapus

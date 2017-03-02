@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteBase /GlobalInt/anov
+RewriteRule ^(.*)$ index.php?route=$1 [QSA,L]

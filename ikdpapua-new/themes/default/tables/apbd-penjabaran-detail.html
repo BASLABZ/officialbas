@@ -1,0 +1,69 @@
+<div class="row">
+    <form action='{ROOT_URL}detail/apbd-penjabaran/{TAHUNANGGARAN}-{KODEPEMDA}-{PERUBAHAN}/rincian.htm' method='POST'>
+        <div class="col-md-6">
+            <div class="row">
+                <label style="padding-top:5px;" class="col-md-3 control-label">Pilih SKPD</label>
+                <div style="padding-bottom:10px;" class="col-md-9">                            
+                    <select name='optskpd' id="optskpd" class="form-control select">
+                        {OPTSKPD}
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <button class='btn btn-primary' ><i class='fa fa-cogs'></i> Proses</button>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class='row'>
+                    <div class='col-md-6'>
+                        <h3 class="panel-title">Laporan Penjabaran APBD {NAMAPEMDA}</h3>
+                    </div>
+                    <div class='col-md-6'>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-body panel-body-table">
+              <div class='table-responsive'>
+                  <table id='tblAPBDPenjabaran' class='table table-hover table-condensed table-bordered table-striped table-actions' style='margin-bottom:0;' >
+                    <thead >
+                        <tr>
+                            <th style='vertical-align: middle;' rowspan='2' colspan='8' class='text-center'>KODE SKPD <br>KODE REKENING</th>
+                            <th style='vertical-align: middle;' rowspan='2' class='text-center'>URAIAN</th>
+                            <th style='vertical-align: middle;' colspan='2' class='text-center'>JUMLAH</th>
+                            <th colspan="2" class="text-center perubahan" >Bertambah/Berkurang</tr>
+                        </tr>
+                        <tr>
+                            <th class="text-center perubahan" >Sebelum<br />Perubahan</th>
+                            <th class="text-center perubahan" >Sesudah<br />Perubahan</th>
+                            <th class="text-center perubahan" >(Rp)</th>
+                            <th class="text-center perubahan" >%</th>
+                        </tr>
+                    </thead>
+                    <tbody id='tbodyData'>
+                        {ROWDATA}
+                    </tbody>
+                  </table>
+              </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- START MENU -->     
+<div class='row'>
+  <div class='col-md-12'>
+    <div class='panel panel-default'>
+        <div class='panel-body'>
+            <a href='{ROOT_URL}apbd-penjabaran.htm' class='btn btn-success btn-sm'><i class='fa fa-chevron-left'></i> Kembali</a>
+        </div>
+    </div>
+  </div>
+</div>  
+<!-- END MENU -->   

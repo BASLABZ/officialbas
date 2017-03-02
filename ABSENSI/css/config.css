@@ -1,0 +1,264 @@
+/*	
+ * Config Style.
+ * Designed by Eren Alba Kaunang
+ * Copyright 2012 Global Intermedia
+ *
+ **/
+ 
+@charset "utf-8";
+
+/* SEMESTA */ 
+/* -------------------------------------------- */
+	div.semesta{
+		width:100%;
+		height:100%;
+		position:absolute;
+		top:0;
+		left:0;
+		z-index:1000;
+	}
+
+
+/* WRAPPER */ 
+/* -------------------------------------------- */
+	div.wrapper{
+		width:960px;
+		padding:0 5px 10px;
+		margin:auto;
+		overflow:hidden;
+		clear:both;
+	}
+	
+
+/* HEADER */ 
+/* -------------------------------------------- */
+	div.header{
+		width:960px;
+		height:100px;
+		position:relative;
+		margin-top:-105px;
+		clear:both;
+		border-bottom-width:4px;
+		overflow:hidden;
+		text-align:center;
+		
+		box-shadow:0 0 5px #ABABAB;
+		-moz-box-shadow:0 0 5px #ABABAB;
+		-webkit-box-shadow:0 0 5px #ABABAB;
+	}
+	div.header img.logo{
+		margin:15px auto;
+	}
+	div.header img.light{
+		position:absolute;
+		top:-100px;
+		left:120px;
+	}
+
+/* MIDDLE */ 
+/* -------------------------------------------- */
+	div.middle{
+		width:960px;
+		margin-top:200px;
+		height:320px;
+		clear:both;
+		background:url(../../img/login/bg.png) center no-repeat;
+	}
+	div.middle div.hbox{
+		width:400px;
+		margin:auto;
+		padding:10px;
+		background:url(../../img/login/black-opa.png) repeat;
+		position:relative;
+		
+		box-shadow:0 0 6px #818181;
+		-moz-box-shadow:0 0 6px #818181;
+		-webkit-box-shadow:0 0 6px #818181;
+		
+		border-radius:4px;
+		-moz-border-radius:4px;
+		-webkit-border-radius:4px;
+	}
+	div.middle div.hbox div.auth{
+		position:absolute;
+		opacity:0.8;
+		top:-60px;
+		left:50%;
+		display:none;
+		overflow:hidden;
+	}
+	div.middle div.hbox div.auth p{
+		padding:10px 20px;
+		overflow:hidden;
+	}
+	div.middle div.hbox div.auth p.loading{
+		background:black;
+	}
+	div.middle div.hbox div.auth p.loading img{
+		vertical-align:middle;
+		margin-right:8px;
+	}
+	div.middle div.hbox div.auth p.loading span.auth-text{
+		font-size:12px;
+		font-weight:bold;
+		color:#969696;
+	}
+	div.middle div.hbox div.auth p.error{
+		background:#FFA8A8;
+		font-size:13px;
+		font-weight:bold;
+		color:#E80000;
+		font-weight:bold;
+	}
+	div.middle div.hbox div.auth p.error img{
+		vertical-align:middle;
+		margin-right:7px;
+	}
+	div.middle div.hbox div.auth p.sukses{
+		background:#FFFFB0;
+		color:#C58101;
+		font-size:13px;
+		font-weight:bold;
+	}
+	div.middle div.box{
+		margin:auto;
+		width:400px;
+		height:260px;
+		background:white;
+		padding:20px 0;
+	}
+	div.middle div.box div.h{
+		width:360px;
+		clear:both;
+		overflow:hidden;
+		padding:13px 20px;
+		border-top:solid 1px #C0C0C0;
+		border-bottom:solid 1px #C0C0C0;
+		color:#575757;
+		font-size:12px;
+		font-weight:bold;
+		text-align:center;
+		text-shadow:0 1px 0 white;
+		
+		box-shadow:0 0 3px #C0C0C0;
+		-moz-box-shadow:0 0 3px #C0C0C0;
+		-webkit-box-shadow:0 0 3px #C0C0C0;
+	}
+	div.middle div.box div.m{
+		clear:both;
+		width:340px;
+		height:100px;
+		padding:30px 30px 0;
+	}
+	div.middle div.box div.m ul.bx{
+		list-style:none;
+		margin:0;
+		padding:0;
+		height:58px;
+		width:338px;
+		border:solid 1px #C0C0C0;
+		clear:both;
+		background:#D5D5D5;
+	}
+	div.middle div.box div.m ul.bx:hover{
+		box-shadow:0 0 5px #969696 inset;
+	}
+	div.middle div.box div.m ul.bx li.l{
+		float:left;
+		width:70px;
+		height:58px;
+		padding-left:10px;
+		text-align:center;
+	}
+	div.middle div.box div.m ul.bx li.l img{
+		margin-top:11px;
+	}
+	div.middle div.box div.m ul.bx li.r{
+		float:right;
+		width:258px;
+		height:58px;
+	}
+	div.middle div.box div.m ul.bx li.r input.txt{
+		border:none;
+		height:20px;
+		background:#D5D5D5;
+		background:none;
+		margin-top:19px;
+		width:238px;
+		font-size:13px;
+		font-weight:bold;
+		font-family:Arial, Helvetica, sans-serif;
+		color:#919191;
+		font-style:italic;
+	}
+	div.middle div.box div.m ul.bx li.r input.txt:focus{
+		color:#424242;
+		font-style:normal;
+	}
+	div.middle div.box div.b{
+		width:340px;
+		height:10px;
+		clear:both;
+		padding:10px 30px 0;
+	}
+	div.middle div.box div.b div.l{
+		font-size:12px;
+		font-weight:bold;
+		color:#575757;
+		padding-top:7px;
+	}
+	div.middle div.box div.b div.l input{
+		vertical-align:middle;
+		margin:0;
+		padding:0;
+	}
+	div.middle div.box div.b div.l span{
+		margin-left:3px;
+	}
+	div.middle div.box div.b input.submit{
+		border:none;
+		padding:7px 0;
+		cursor:pointer;
+		width:100px;
+		text-align:center;
+		font-family:Arial;
+		font-size:13px;
+		font-weight:bold;
+		color:white;
+	}
+	div.middle div.box div.b input.submit:hover{
+		box-shadow:0 0 6px #818181;
+		-moz-box-shadow:0 0 6px #818181;
+		-webkit-box-shadow:0 0 6px #818181;
+	}
+
+
+/* FOOTER */ 
+/* -------------------------------------------- */
+	div.footer{
+		width:960px;
+		clear:both;
+		margin-top:50px;
+		overflow:hidden;
+		border-width:1px;
+		padding-top:15px;
+	}
+	div.footer div.l{
+		float:left;
+		font-size:12px;
+		font-weight:bold;
+		text-shadow:0 1px 0 white;
+	}
+	div.footer div.r{
+		float:right;
+	}
+	div.footer div.r div.bx{
+		float:left;
+		margin-right:5px;
+		width:15px;
+		height:15px;
+		border-radius:3px;
+		-moz-border-radius:3px;
+		-webkit-border-radius:3px;
+	}
+	

@@ -1,0 +1,52 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: #DDD;
+	font-family: 'Verdana';
+}
+
+p, img, div, a, table, tr, td{
+	padding: 0;
+	margin: 0;
+}
+
+table.semesta{
+	top: 0;
+	left: 0;
+	width: 100%;
+	position: absolute;
+	height: 100%;
+}
+.semesta tr td{
+	vertical-align: middle;
+	text-align: center;
+}
+.semesta tr td img.bad{
+	width: 100px;
+	margin-bottom: 5px;
+}
+.semesta tr td{	
+	padding: 10px 0;
+}
+.semesta tr td p.msg{
+	font-size: 20px;
+	padding-bottom: 15px;
+	/*width: 700px;
+	margin: auto;*/
+}
+.semesta tr td p.t{
+	font-size: 11px;
+	color: #2d2d2d;
+	line-height: 16px;
+}
+.semesta tr td p.powered{
+	font-weight: bold;
+	font-size: 10px;
+	color: #898989;
+	padding: 20px 0 5px;
+}
+.semesta tr td img.logo{
+	margin-top: 70px;
+	height: 45px;
+	opacity: 0.5;
+}

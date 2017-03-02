@@ -1,0 +1,745 @@
+
+<model xmlns="http://ns.adobe.com/Fiber/1.0">
+  <annotation name="ActionScriptGeneration">
+    <item name="FullyQualifyReferences">true</item>
+  </annotation>
+  <service name="GaleriService">
+    <annotation name="ActionScriptGeneration">
+      <item name="Source">GaleriService</item>
+      <item name="ServiceType">RemoteObject</item>
+      <item name="Package">services.galeriservice</item>
+      <item name="Endpoint">gateway.php</item>
+      <item name="Destination">GaleriService</item>
+    </annotation>
+    <annotation name="ServiceTypeGroup">
+      <item name="ServiceBackendType">PHP</item>
+    </annotation>
+    <annotation name="ServiceConfig">
+      <item name="PHP_RELATIVE_LOCATION">MASTERASET-debug/services/GaleriService.php</item>
+      <item name="PHP_SERVER_ROOT">C:/xampp/htdocs/MASTERASET</item>
+      <item name="DEFAULT_ENTITY_PACKAGE">valueObjects</item>
+      <item name="PHP_SERVICES_FOLDER">C:/xampp/htdocs/MASTERASET/MASTERASET-debug/services</item>
+      <item name="PHP_LOCATION">C:/xampp/htdocs/MASTERASET/MASTERASET-debug/services/GaleriService.php</item>
+      <item name="LINKED_FILE">GaleriService.php</item>
+      <item name="PHP_SERVER_ROOT_URL">http://localhost/MASTERASET/</item>
+      <item name="ABSOLUTE_ENDPOINT">http://localhost/MASTERASET/MASTERASET-debug/gateway.php</item>
+      <item name="PHP_CLASS_NAME">GaleriService</item>
+    </annotation>
+    <function name="getAllGaleri" return-type="Galeri[]">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="returnType">opaque</item>
+      </annotation>
+    </function>
+    <function name="getGaleriByID" return-type="Galeri">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="inputParams">opaque</item>
+        <item name="returnType">opaque</item>
+      </annotation>
+      <parameter name="itemID" type="string"/>
+    </function>
+    <function name="createGaleri" return-type="string">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="inputParams">opaque</item>
+        <item name="returnType">opaque</item>
+      </annotation>
+      <parameter name="item" type="Galeri"/>
+    </function>
+    <function name="updateGaleri" return-type="void">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="inputParams">opaque</item>
+        <item name="returnType">opaque</item>
+      </annotation>
+      <parameter name="item" type="Galeri"/>
+    </function>
+    <function name="deleteGaleri" return-type="void">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="inputParams">opaque</item>
+        <item name="returnType">opaque</item>
+      </annotation>
+      <parameter name="itemID" type="string"/>
+    </function>
+    <function name="count" return-type="integer">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="returnType">opaque</item>
+      </annotation>
+    </function>
+    <function name="getGaleri_paged" return-type="Galeri[]">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="inputParams">opaque,opaque</item>
+        <item name="returnType">opaque</item>
+      </annotation>
+      <parameter name="startIndex" type="integer"/>
+      <parameter name="numItems" type="integer"/>
+    </function>
+  </service>
+  <service name="GaleriService1">
+    <annotation name="ActionScriptGeneration">
+      <item name="Source">GaleriService1</item>
+      <item name="ServiceType">RemoteObject</item>
+      <item name="Package">services.galeriservice1</item>
+      <item name="Endpoint">gateway.php</item>
+      <item name="Destination">GaleriService1</item>
+    </annotation>
+    <annotation name="ServiceTypeGroup">
+      <item name="ServiceBackendType">PHP</item>
+    </annotation>
+    <annotation name="ServiceConfig">
+      <item name="PHP_RELATIVE_LOCATION">MASTERASET-debug/services/GaleriService1.php</item>
+      <item name="PHP_SERVER_ROOT">C:/xampp/htdocs/MASTERASET</item>
+      <item name="DEFAULT_ENTITY_PACKAGE">valueObjects</item>
+      <item name="PHP_SERVICES_FOLDER">C:/xampp/htdocs/MASTERASET/MASTERASET-debug/services</item>
+      <item name="PHP_LOCATION">C:/xampp/htdocs/MASTERASET/MASTERASET-debug/services/GaleriService1.php</item>
+      <item name="LINKED_FILE">GaleriService1.php</item>
+      <item name="PHP_SERVER_ROOT_URL">http://localhost/MASTERASET/</item>
+      <item name="ABSOLUTE_ENDPOINT">http://localhost/MASTERASET/MASTERASET-debug/gateway.php</item>
+      <item name="PHP_CLASS_NAME">GaleriService1</item>
+    </annotation>
+    <function name="getAllGaleri" return-type="Galeri[]">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="returnType">opaque</item>
+      </annotation>
+    </function>
+    <function name="getGaleriByID" return-type="Galeri">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="inputParams">opaque</item>
+        <item name="returnType">opaque</item>
+      </annotation>
+      <parameter name="itemID" type="string"/>
+    </function>
+    <function name="createGaleri" return-type="string">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="inputParams">opaque</item>
+        <item name="returnType">opaque</item>
+      </annotation>
+      <parameter name="item" type="Galeri"/>
+    </function>
+    <function name="updateGaleri" return-type="void">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="inputParams">opaque</item>
+        <item name="returnType">opaque</item>
+      </annotation>
+      <parameter name="item" type="Galeri"/>
+    </function>
+    <function name="deleteGaleri" return-type="void">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="inputParams">opaque</item>
+        <item name="returnType">opaque</item>
+      </annotation>
+      <parameter name="itemID" type="string"/>
+    </function>
+    <function name="count" return-type="integer">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="returnType">opaque</item>
+      </annotation>
+    </function>
+    <function name="getGaleri_paged" return-type="Galeri[]">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="inputParams">opaque,opaque</item>
+        <item name="returnType">opaque</item>
+      </annotation>
+      <parameter name="startIndex" type="integer"/>
+      <parameter name="numItems" type="integer"/>
+    </function>
+  </service>
+  <service name="BeritaService">
+    <annotation name="ActionScriptGeneration">
+      <item name="Source">BeritaService</item>
+      <item name="ServiceType">RemoteObject</item>
+      <item name="Package">services.beritaservice</item>
+      <item name="Endpoint">gateway.php</item>
+      <item name="Destination">BeritaService</item>
+    </annotation>
+    <annotation name="ServiceTypeGroup">
+      <item name="ServiceBackendType">PHP</item>
+    </annotation>
+    <annotation name="ServiceConfig">
+      <item name="PHP_RELATIVE_LOCATION">MASTERASET-debug/services/BeritaService.php</item>
+      <item name="PHP_SERVER_ROOT">C:/xampp/htdocs/MASTERASET</item>
+      <item name="DEFAULT_ENTITY_PACKAGE">valueObjects</item>
+      <item name="PHP_SERVICES_FOLDER">C:/xampp/htdocs/MASTERASET/MASTERASET-debug/services</item>
+      <item name="PHP_LOCATION">C:/xampp/htdocs/MASTERASET/MASTERASET-debug/services/BeritaService.php</item>
+      <item name="LINKED_FILE">BeritaService.php</item>
+      <item name="PHP_SERVER_ROOT_URL">http://localhost/MASTERASET/</item>
+      <item name="ABSOLUTE_ENDPOINT">http://localhost/MASTERASET/MASTERASET-debug/gateway.php</item>
+      <item name="PHP_CLASS_NAME">BeritaService</item>
+    </annotation>
+    <function name="getAllBerita" return-type="Berita[]">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="returnType">opaque</item>
+      </annotation>
+    </function>
+    <function name="getBeritaByID" return-type="Berita">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="inputParams">opaque</item>
+        <item name="returnType">opaque</item>
+      </annotation>
+      <parameter name="itemID" type="integer"/>
+    </function>
+    <function name="createBerita" return-type="integer">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="inputParams">opaque</item>
+        <item name="returnType">opaque</item>
+      </annotation>
+      <parameter name="item" type="Berita"/>
+    </function>
+    <function name="updateBerita" return-type="void">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="inputParams">opaque</item>
+        <item name="returnType">opaque</item>
+      </annotation>
+      <parameter name="item" type="Berita"/>
+    </function>
+    <function name="deleteBerita" return-type="void">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="inputParams">opaque</item>
+        <item name="returnType">opaque</item>
+      </annotation>
+      <parameter name="itemID" type="integer"/>
+    </function>
+    <function name="count" return-type="Galeri[]">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="ValidProperties">
+        <item name="propertySpecifier">IDGALERI,NAMAGALERI,GAMBAR</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="returnType">opaque</item>
+      </annotation>
+    </function>
+    <function name="getBerita_paged" return-type="Berita[]">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="inputParams">opaque,opaque</item>
+        <item name="returnType">opaque</item>
+      </annotation>
+      <parameter name="startIndex" type="integer"/>
+      <parameter name="numItems" type="integer"/>
+    </function>
+  </service>
+  <entity name="Galeri" persistent="true">
+    <annotation name="EntityProperties">
+      <item name="EntityOriginalName">Galeri</item>
+    </annotation>
+    <annotation name="service Group">
+      <item name="service">GaleriService,GaleriService1,BeritaService</item>
+    </annotation>
+    <annotation name="ServerProperties">
+      <item name="IncludeRemoteClass">nonempty</item>
+    </annotation>
+    <annotation name="DataManagement">
+      <item name="create">createGaleri</item>
+      <item name="update">updateGaleri</item>
+      <item name="get">getGaleriByID</item>
+      <item name="delete">deleteGaleri</item>
+      <item name="fillFunc">getAllGaleri,getGaleri_paged</item>
+      <item name="managingService">GaleriService</item>
+    </annotation>
+    <annotation name="getGaleriByID">
+      <item name="propertySpecifier">IDGALERI,NAMAGALERI,GAMBAR</item>
+    </annotation>
+    <annotation name="getAllGaleri">
+      <item name="propertySpecifier">IDGALERI,NAMAGALERI,GAMBAR</item>
+    </annotation>
+    <annotation name="getGaleri_paged">
+      <item name="propertySpecifier">IDGALERI,NAMAGALERI,GAMBAR</item>
+      <item name="pagingEnabled">true</item>
+      <item name="positionalPagingParameters">true</item>
+      <item name="countOperation">count</item>
+    </annotation>
+    <annotation name="ActionScriptGeneration">
+      <item name="Package">valueObjects</item>
+    </annotation>
+    <annotation name="count">
+      <item name="propertySpecifier">IDGALERI,NAMAGALERI,GAMBAR</item>
+    </annotation>
+    <id name="IDGALERI" type="string"/>
+    <property name="NAMAGALERI" type="string"/>
+    <property name="GAMBAR" type="string"/>
+  </entity>
+  <entity name="Berita" persistent="true">
+    <annotation name="EntityProperties">
+      <item name="EntityOriginalName">Berita</item>
+    </annotation>
+    <annotation name="service Group">
+      <item name="service">BeritaService</item>
+    </annotation>
+    <annotation name="ServerProperties">
+      <item name="IncludeRemoteClass">nonempty</item>
+    </annotation>
+    <annotation name="DataManagement">
+      <item name="create">createBerita</item>
+      <item name="update">updateBerita</item>
+      <item name="get">getBeritaByID</item>
+      <item name="delete">deleteBerita</item>
+      <item name="fillFunc">getAllBerita,getBerita_paged</item>
+      <item name="managingService">BeritaService</item>
+    </annotation>
+    <annotation name="getBeritaByID">
+      <item name="propertySpecifier">IDBERITA,JUDUL,TANGGALPOSTING,DESKRIPSI</item>
+    </annotation>
+    <annotation name="getAllBerita">
+      <item name="propertySpecifier">IDBERITA,JUDUL,TANGGALPOSTING,DESKRIPSI</item>
+    </annotation>
+    <annotation name="getBerita_paged">
+      <item name="propertySpecifier">IDBERITA,JUDUL,TANGGALPOSTING,DESKRIPSI</item>
+      <item name="pagingEnabled">true</item>
+      <item name="positionalPagingParameters">true</item>
+      <item name="countOperation">count</item>
+    </annotation>
+    <annotation name="ActionScriptGeneration">
+      <item name="Package">valueObjects</item>
+    </annotation>
+    <id name="IDBERITA" type="integer"/>
+    <property name="JUDUL" type="string"/>
+    <property name="TANGGALPOSTING" type="date"/>
+    <property name="DESKRIPSI" type="string"/>
+  </entity>
+  <service name="ProfileService">
+    <annotation name="ActionScriptGeneration">
+      <item name="Source">ProfileService</item>
+      <item name="ServiceType">RemoteObject</item>
+      <item name="Package">services.profileservice</item>
+      <item name="Endpoint">gateway.php</item>
+      <item name="Destination">ProfileService</item>
+    </annotation>
+    <annotation name="ServiceTypeGroup">
+      <item name="ServiceBackendType">PHP</item>
+    </annotation>
+    <annotation name="ServiceConfig">
+      <item name="PHP_RELATIVE_LOCATION">MASTERASET-debug/services/ProfileService.php</item>
+      <item name="PHP_SERVER_ROOT">C:/xampp/htdocs/MASTERASET</item>
+      <item name="DEFAULT_ENTITY_PACKAGE">valueObjects</item>
+      <item name="PHP_SERVICES_FOLDER">C:/xampp/htdocs/MASTERASET/MASTERASET-debug/services</item>
+      <item name="PHP_LOCATION">C:/xampp/htdocs/MASTERASET/MASTERASET-debug/services/ProfileService.php</item>
+      <item name="LINKED_FILE">ProfileService.php</item>
+      <item name="PHP_SERVER_ROOT_URL">http://localhost/MASTERASET/</item>
+      <item name="ABSOLUTE_ENDPOINT">http://localhost/MASTERASET/MASTERASET-debug/gateway.php</item>
+      <item name="PHP_CLASS_NAME">ProfileService</item>
+    </annotation>
+    <function name="getAllProfile" return-type="Profile[]">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="returnType">opaque</item>
+      </annotation>
+    </function>
+    <function name="getProfileByID" return-type="Profile">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="inputParams">opaque</item>
+        <item name="returnType">opaque</item>
+      </annotation>
+      <parameter name="itemID" type="string"/>
+    </function>
+    <function name="createProfile" return-type="string">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="inputParams">opaque</item>
+        <item name="returnType">opaque</item>
+      </annotation>
+      <parameter name="item" type="Profile"/>
+    </function>
+    <function name="updateProfile" return-type="void">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="inputParams">opaque</item>
+        <item name="returnType">opaque</item>
+      </annotation>
+      <parameter name="item" type="Profile"/>
+    </function>
+    <function name="deleteProfile" return-type="void">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="inputParams">opaque</item>
+        <item name="returnType">opaque</item>
+      </annotation>
+      <parameter name="itemID" type="string"/>
+    </function>
+    <function name="count" return-type="integer">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="returnType">opaque</item>
+      </annotation>
+    </function>
+    <function name="getProfile_paged" return-type="Profile[]">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="inputParams">opaque,opaque</item>
+        <item name="returnType">opaque</item>
+      </annotation>
+      <parameter name="startIndex" type="integer"/>
+      <parameter name="numItems" type="integer"/>
+    </function>
+  </service>
+  <entity name="Profile" persistent="true">
+    <annotation name="EntityProperties">
+      <item name="EntityOriginalName">Profile</item>
+    </annotation>
+    <annotation name="service Group">
+      <item name="service">ProfileService</item>
+    </annotation>
+    <annotation name="ServerProperties">
+      <item name="IncludeRemoteClass">nonempty</item>
+    </annotation>
+    <annotation name="DataManagement">
+      <item name="create">createProfile</item>
+      <item name="update">updateProfile</item>
+      <item name="get">getProfileByID</item>
+      <item name="delete">deleteProfile</item>
+      <item name="fillFunc">getAllProfile,getProfile_paged</item>
+      <item name="managingService">ProfileService</item>
+    </annotation>
+    <annotation name="getProfileByID">
+      <item name="propertySpecifier">idprofile,title,post_date,description,draft</item>
+    </annotation>
+    <annotation name="getAllProfile">
+      <item name="propertySpecifier">idprofile,title,post_date,description,draft</item>
+    </annotation>
+    <annotation name="getProfile_paged">
+      <item name="propertySpecifier">idprofile,title,post_date,description,draft</item>
+      <item name="pagingEnabled">true</item>
+      <item name="positionalPagingParameters">true</item>
+      <item name="countOperation">count</item>
+    </annotation>
+    <annotation name="ActionScriptGeneration">
+      <item name="Package">valueObjects</item>
+    </annotation>
+    <id name="idprofile" type="string"/>
+    <property name="title" type="string"/>
+    <property name="post_date" type="date"/>
+    <property name="description" type="string"/>
+    <property name="draft" type="string"/>
+  </entity>
+  <service name="ProdukService">
+    <annotation name="ActionScriptGeneration">
+      <item name="Source">ProdukService</item>
+      <item name="ServiceType">RemoteObject</item>
+      <item name="Package">services.produkservice</item>
+      <item name="Endpoint">gateway.php</item>
+      <item name="Destination">ProdukService</item>
+    </annotation>
+    <annotation name="ServiceTypeGroup">
+      <item name="ServiceBackendType">PHP</item>
+    </annotation>
+    <annotation name="ServiceConfig">
+      <item name="PHP_RELATIVE_LOCATION">MASTERASET-debug/services/ProdukService.php</item>
+      <item name="PHP_SERVER_ROOT">C:/xampp/htdocs/MASTERASET</item>
+      <item name="DEFAULT_ENTITY_PACKAGE">valueObjects</item>
+      <item name="PHP_SERVICES_FOLDER">C:/xampp/htdocs/MASTERASET/MASTERASET-debug/services</item>
+      <item name="PHP_LOCATION">C:/xampp/htdocs/MASTERASET/MASTERASET-debug/services/ProdukService.php</item>
+      <item name="LINKED_FILE">ProdukService.php</item>
+      <item name="PHP_SERVER_ROOT_URL">http://localhost/MASTERASET/</item>
+      <item name="ABSOLUTE_ENDPOINT">http://localhost/MASTERASET/MASTERASET-debug/gateway.php</item>
+      <item name="PHP_CLASS_NAME">ProdukService</item>
+    </annotation>
+    <function name="getAllProduk" return-type="Produk[]">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="returnType">opaque</item>
+      </annotation>
+    </function>
+    <function name="getProdukByID" return-type="Produk">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="inputParams">opaque</item>
+        <item name="returnType">opaque</item>
+      </annotation>
+      <parameter name="itemID" type="string"/>
+    </function>
+    <function name="createProduk" return-type="string">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="inputParams">opaque</item>
+        <item name="returnType">opaque</item>
+      </annotation>
+      <parameter name="item" type="Produk"/>
+    </function>
+    <function name="updateProduk" return-type="void">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="inputParams">opaque</item>
+        <item name="returnType">opaque</item>
+      </annotation>
+      <parameter name="item" type="Produk"/>
+    </function>
+    <function name="deleteProduk" return-type="void">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="inputParams">opaque</item>
+        <item name="returnType">opaque</item>
+      </annotation>
+      <parameter name="itemID" type="string"/>
+    </function>
+    <function name="count" return-type="integer">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="returnType">opaque</item>
+      </annotation>
+    </function>
+    <function name="getProduk_paged" return-type="Produk[]">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="inputParams">opaque,opaque</item>
+        <item name="returnType">opaque</item>
+      </annotation>
+      <parameter name="startIndex" type="integer"/>
+      <parameter name="numItems" type="integer"/>
+    </function>
+  </service>
+  <entity name="Produk" persistent="true">
+    <annotation name="EntityProperties">
+      <item name="EntityOriginalName">Produk</item>
+    </annotation>
+    <annotation name="service Group">
+      <item name="service">ProdukService</item>
+    </annotation>
+    <annotation name="ServerProperties">
+      <item name="IncludeRemoteClass">nonempty</item>
+    </annotation>
+    <annotation name="DataManagement">
+      <item name="create">createProduk</item>
+      <item name="update">updateProduk</item>
+      <item name="get">getProdukByID</item>
+      <item name="delete">deleteProduk</item>
+      <item name="fillFunc">getAllProduk,getProduk_paged</item>
+      <item name="managingService">ProdukService</item>
+    </annotation>
+    <annotation name="getProdukByID">
+      <item name="propertySpecifier">KODEPRODUK,NAMAPRODUK,GAMBAR</item>
+    </annotation>
+    <annotation name="getAllProduk">
+      <item name="propertySpecifier">KODEPRODUK,NAMAPRODUK,GAMBAR</item>
+    </annotation>
+    <annotation name="getProduk_paged">
+      <item name="propertySpecifier">KODEPRODUK,NAMAPRODUK,GAMBAR</item>
+      <item name="pagingEnabled">true</item>
+      <item name="positionalPagingParameters">true</item>
+      <item name="countOperation">count</item>
+    </annotation>
+    <annotation name="ActionScriptGeneration">
+      <item name="Package">valueObjects</item>
+    </annotation>
+    <id name="KODEPRODUK" type="string"/>
+    <property name="NAMAPRODUK" type="string"/>
+    <property name="GAMBAR" type="string"/>
+  </entity>
+  <service name="AdminService">
+    <annotation name="ActionScriptGeneration">
+      <item name="Source">AdminService</item>
+      <item name="ServiceType">RemoteObject</item>
+      <item name="Package">services.adminservice</item>
+      <item name="Endpoint">gateway.php</item>
+      <item name="Destination">AdminService</item>
+    </annotation>
+    <annotation name="ServiceTypeGroup">
+      <item name="ServiceBackendType">PHP</item>
+    </annotation>
+    <annotation name="ServiceConfig">
+      <item name="PHP_RELATIVE_LOCATION">MASTERASET-debug/services/AdminService.php</item>
+      <item name="PHP_SERVER_ROOT">C:/xampp/htdocs/MASTERASET</item>
+      <item name="DEFAULT_ENTITY_PACKAGE">valueObjects</item>
+      <item name="PHP_SERVICES_FOLDER">C:/xampp/htdocs/MASTERASET/MASTERASET-debug/services</item>
+      <item name="PHP_LOCATION">C:/xampp/htdocs/MASTERASET/MASTERASET-debug/services/AdminService.php</item>
+      <item name="LINKED_FILE">AdminService.php</item>
+      <item name="PHP_SERVER_ROOT_URL">http://localhost/MASTERASET/</item>
+      <item name="ABSOLUTE_ENDPOINT">http://localhost/MASTERASET/MASTERASET-debug/gateway.php</item>
+      <item name="PHP_CLASS_NAME">AdminService</item>
+    </annotation>
+    <function name="getAllAdmin" return-type="Admin[]">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="returnType">opaque</item>
+      </annotation>
+    </function>
+    <function name="getAdminByID" return-type="Admin">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="inputParams">opaque</item>
+        <item name="returnType">opaque</item>
+      </annotation>
+      <parameter name="itemID" type="string"/>
+    </function>
+    <function name="createAdmin" return-type="string">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="inputParams">opaque</item>
+        <item name="returnType">opaque</item>
+      </annotation>
+      <parameter name="item" type="Admin"/>
+    </function>
+    <function name="updateAdmin" return-type="void">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="inputParams">opaque</item>
+        <item name="returnType">opaque</item>
+      </annotation>
+      <parameter name="item" type="Admin"/>
+    </function>
+    <function name="deleteAdmin" return-type="void">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="inputParams">opaque</item>
+        <item name="returnType">opaque</item>
+      </annotation>
+      <parameter name="itemID" type="string"/>
+    </function>
+    <function name="count" return-type="integer">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="returnType">opaque</item>
+      </annotation>
+    </function>
+    <function name="getAdmin_paged" return-type="Admin[]">
+      <annotation name="analyze group">
+        <item name="analyzed">true</item>
+      </annotation>
+      <annotation name="original signature">
+        <item name="inputParams">opaque,opaque</item>
+        <item name="returnType">opaque</item>
+      </annotation>
+      <parameter name="startIndex" type="integer"/>
+      <parameter name="numItems" type="integer"/>
+    </function>
+  </service>
+  <entity name="Admin" persistent="true">
+    <annotation name="EntityProperties">
+      <item name="EntityOriginalName">Admin</item>
+    </annotation>
+    <annotation name="service Group">
+      <item name="service">AdminService</item>
+    </annotation>
+    <annotation name="ServerProperties">
+      <item name="IncludeRemoteClass">nonempty</item>
+    </annotation>
+    <annotation name="DataManagement">
+      <item name="create">createAdmin</item>
+      <item name="update">updateAdmin</item>
+      <item name="get">getAdminByID</item>
+      <item name="delete">deleteAdmin</item>
+      <item name="fillFunc">getAllAdmin,getAdmin_paged</item>
+      <item name="managingService">AdminService</item>
+    </annotation>
+    <annotation name="getAdminByID">
+      <item name="propertySpecifier">idadmin,first_name,last_name,address,email,contact,username,password</item>
+    </annotation>
+    <annotation name="getAllAdmin">
+      <item name="propertySpecifier">idadmin,first_name,last_name,address,email,contact,username,password</item>
+    </annotation>
+    <annotation name="getAdmin_paged">
+      <item name="propertySpecifier">idadmin,first_name,last_name,address,email,contact,username,password</item>
+      <item name="pagingEnabled">true</item>
+      <item name="positionalPagingParameters">true</item>
+      <item name="countOperation">count</item>
+    </annotation>
+    <annotation name="ActionScriptGeneration">
+      <item name="Package">valueObjects</item>
+    </annotation>
+    <id name="idadmin" type="string"/>
+    <property name="first_name" type="string"/>
+    <property name="last_name" type="string"/>
+    <property name="address" type="string"/>
+    <property name="email" type="string"/>
+    <property name="contact" type="string"/>
+    <property name="username" type="string"/>
+    <property name="password" type="string"/>
+  </entity>
+</model>

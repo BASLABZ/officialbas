@@ -1,0 +1,67 @@
+
+		body { font-family:"Times New Roman", Times, serif; font-size: 11pt;  }
+		p { 	text-align: justify; margin-bottom: 4pt; margin-top:0pt;  }
+
+		table {font-family: "Times New Roman", Times, serif; font-size: 9pt; line-height: 1.2;
+			margin-top: 2pt; margin-bottom: 5pt;
+			border-collapse: collapse;  }
+
+		thead {	font-weight: bold; vertical-align: bottom; }
+		tfoot {	font-weight: bold; vertical-align: top; }
+		thead td { font-weight: bold; }
+		tfoot td { font-weight: bold; }
+
+		thead td, thead th, tfoot td, tfoot th { font-variant: small-caps; }
+
+		.headerrow td, .headerrow th { background-gradient: linear #b7cebd #f5f8f5 0 1 0 0.2;  }
+		.footerrow td, .footerrow th { background-gradient: linear #b7cebd #f5f8f5 0 1 0 0.2;  }
+
+		th {	font-weight: bold; 
+			vertical-align: top; 
+			
+			padding-left: 2mm; 
+			padding-right: 2mm; 
+			padding-top: 0.5mm; 
+			padding-bottom: 0.5mm;
+			text-align:center; 
+		 }
+
+		td {	padding-left: 2mm; 
+			vertical-align: top; 
+			text-align:left; 
+			padding-right: 2mm; 
+			padding-top: 0.5mm; 
+			padding-bottom: 0.5mm;
+		 }
+		td.td1{
+			text-align:center;
+		}
+		td.header{
+			border-bottom: 3px;
+			border-bottom-style: double;
+			border-bottom-color: #333;
+			padding-bottom: 10px;
+		}
+		th p { text-align: left; margin:0pt;  }
+		td p { text-align: left; margin:0pt;  }
+
+		table.widecells td {
+			padding-left: 5mm;
+			padding-right: 5mm;
+		}
+		table.tallcells td {
+			padding-top: 3mm;
+			padding-bottom: 3mm; 
+		}
+
+		hr {	width: 100%; height: 1px; 
+			text-align: center; color: #999999; 
+			margin-top: 8pt; margin-bottom: 8pt; }
+		hr.dbl {	width: 100%; height: 1px; 
+			text-align: center; color: #999999; 
+			margin-top: 8pt; margin-bottom: 8pt;
+			border-style: double; }
+
+		
+
+

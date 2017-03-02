@@ -1,0 +1,9 @@
+RewriteEngine on
+Options -Indexes
+
+RewriteRule ^detail/([^/]+)/([^/]+)/([^/]+).htm$ index.php?mode=detail&content=$1&id=$2 
+RewriteRule ^download/([^/]+)/([^/]+)/([^/]+).htm$ index.php?mode=$1&cntmode=download&id=$2 
+RewriteRule ^([^/]+).htm$ index.php?mode=$1
+RewriteRule ^logout.htm$ index.php?mode=logout
+RewriteRule ^display.htm$ index.php?mode=display
+RewriteRule ^index.htm$ index.php

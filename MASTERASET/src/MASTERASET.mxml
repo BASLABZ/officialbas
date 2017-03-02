@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
+			   xmlns:s="library://ns.adobe.com/flex/spark"
+			   xmlns:mx="library://ns.adobe.com/flex/mx"
+			   xmlns:beritaservice="services.beritaservice.*"
+			   xmlns:galeriservice1="services.galeriservice1.*"
+			   xmlns:profileservice="services.profileservice.*"
+			   xmlns:produkservice="services.produkservice.*"
+			   xmlns:adminservice="services.adminservice.*"
+			   minWidth="955" minHeight="600">
+	<fx:Script>
+		<![CDATA[
+			import mx.controls.Alert;
+			import mx.events.FlexEvent;
+			
+			protected function dataGrid_creationCompleteHandler(event:FlexEvent):void
+			{
+				getAllBeritaResult.token = beritaService.getAllBerita();
+			}
+			
+			
+			protected function dataGrid2_creationCompleteHandler(event:FlexEvent):void
+			{
+				getAllGaleriResult.token = galeriService1.getAllGaleri();
+			}
+			
+			
+			protected function dataGrid3_creationCompleteHandler(event:FlexEvent):void
+			{
+				getAllProfileResult.token = profileService.getAllProfile();
+			}
+			
+			
+			protected function dataGrid4_creationCompleteHandler(event:FlexEvent):void
+			{
+				getAllProdukResult.token = produkService.getAllProduk();
+			}
+			
+			
+			protected function dataGrid5_creationCompleteHandler(event:FlexEvent):void
+			{
+				getAllAdminResult.token = adminService.getAllAdmin();
+			}
+			
+		]]>
+	</fx:Script>
+	<fx:Declarations>
+		<s:CallResponder id="getAllBeritaResult"/>
+		<beritaservice:BeritaService id="beritaService"
+									 fault="Alert.show(event.fault.faultString + '\n' + event.fault.faultDetail)"
+									 showBusyCursor="true"/>
+		<s:CallResponder id="getAllGaleriResult"/>
+		<galeriservice1:GaleriService1 id="galeriService1"
+									   fault="Alert.show(event.fault.faultString + '\n' + event.fault.faultDetail)"
+									   showBusyCursor="true"/>
+		<s:CallResponder id="getAllProfileResult"/>
+		<profileservice:ProfileService id="profileService"
+									   fault="Alert.show(event.fault.faultString + '\n' + event.fault.faultDetail)"
+									   showBusyCursor="true"/>
+		<s:CallResponder id="getAllProdukResult"/>
+		<produkservice:ProdukService id="produkService"
+									 fault="Alert.show(event.fault.faultString + '\n' + event.fault.faultDetail)"
+									 showBusyCursor="true"/>
+		<s:CallResponder id="getAllAdminResult"/>
+		<adminservice:AdminService id="adminService"
+								   fault="Alert.show(event.fault.faultString + '\n' + event.fault.faultDetail)"
+								   showBusyCursor="true"/>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<s:TabBar x="0" y="0" dataProvider="{viewstack1}"/>
+	<mx:ViewStack id="viewstack1" x="-2" y="24" width="741" height="200">
+		<s:NavigatorContent width="100%" height="100%" label="BERITA">
+			<s:DataGrid id="dataGrid" x="18" y="49" width="678" height="141"
+						creationComplete="dataGrid_creationCompleteHandler(event)"
+						requestedRowCount="0">
+				<s:columns>
+					<s:ArrayList>
+						<s:GridColumn dataField="IDBERITA" headerText="IDBERITA"></s:GridColumn>
+						<s:GridColumn dataField="JUDUL" headerText="JUDUL"></s:GridColumn>
+						<s:GridColumn dataField="TANGGALPOSTING" headerText="TANGGALPOSTING"></s:GridColumn>
+						<s:GridColumn dataField="DESKRIPSI" headerText="DESKRIPSI"></s:GridColumn>
+					</s:ArrayList>
+				</s:columns>
+				<s:typicalItem>
+					<fx:Object DESKRIPSI="DESKRIPSI1" IDBERITA="IDBERITA1" JUDUL="JUDUL1"
+							   TANGGALPOSTING="TANGGALPOSTING1"></fx:Object>
+				</s:typicalItem>
+				<s:AsyncListView list="{getAllBeritaResult.lastResult}"/>
+			</s:DataGrid>
+		</s:NavigatorContent>
+		<s:NavigatorContent width="100%" height="100%" label="GALERI">
+			<s:DataGrid id="dataGrid2" x="26" y="36" width="696" height="154"
+						creationComplete="dataGrid2_creationCompleteHandler(event)"
+						requestedRowCount="0">
+				<s:columns>
+					<s:ArrayList>
+						<s:GridColumn dataField="IDGALERI" headerText="IDGALERI"></s:GridColumn>
+						<s:GridColumn dataField="NAMAGALERI" headerText="NAMAGALERI"></s:GridColumn>
+						<s:GridColumn dataField="GAMBAR" headerText="GAMBAR"></s:GridColumn>
+					</s:ArrayList>
+				</s:columns>
+				<s:typicalItem>
+					<fx:Object GAMBAR="GAMBAR1" IDGALERI="IDGALERI1" NAMAGALERI="NAMAGALERI1"></fx:Object>
+				</s:typicalItem>
+				<s:AsyncListView list="{getAllGaleriResult.lastResult}"/>
+			</s:DataGrid>
+		</s:NavigatorContent>
+		<s:NavigatorContent width="100%" height="100%" label="PROFILE">
+			<s:DataGrid id="dataGrid3" x="19" y="31" width="677"
+						creationComplete="dataGrid3_creationCompleteHandler(event)"
+						requestedRowCount="0">
+				<s:columns>
+					<s:ArrayList>
+						<s:GridColumn dataField="idprofile" headerText="idprofile"></s:GridColumn>
+						<s:GridColumn dataField="title" headerText="title"></s:GridColumn>
+						<s:GridColumn dataField="post_date" headerText="post_date"></s:GridColumn>
+						<s:GridColumn dataField="description" headerText="description"></s:GridColumn>
+						<s:GridColumn dataField="draft" headerText="draft"></s:GridColumn>
+					</s:ArrayList>
+				</s:columns>
+				<s:typicalItem>
+					<fx:Object description="description1" draft="draft1" idprofile="idprofile1"
+							   post_date="post_date1" title="title1"></fx:Object>
+				</s:typicalItem>
+				<s:AsyncListView list="{getAllProfileResult.lastResult}"/>
+			</s:DataGrid>
+		</s:NavigatorContent>
+		<s:NavigatorContent width="100%" height="100%" label="PRODUK">
+			<s:DataGrid id="dataGrid4" x="58" y="30" width="660"
+						creationComplete="dataGrid4_creationCompleteHandler(event)"
+						requestedRowCount="0">
+				<s:columns>
+					<s:ArrayList>
+						<s:GridColumn dataField="KODEPRODUK" headerText="KODEPRODUK"></s:GridColumn>
+						<s:GridColumn dataField="NAMAPRODUK" headerText="NAMAPRODUK"></s:GridColumn>
+						<s:GridColumn dataField="GAMBAR" headerText="GAMBAR"></s:GridColumn>
+					</s:ArrayList>
+				</s:columns>
+				<s:typicalItem>
+					<fx:Object GAMBAR="GAMBAR1" KODEPRODUK="KODEPRODUK1" NAMAPRODUK="NAMAPRODUK1"></fx:Object>
+				</s:typicalItem>
+				<s:AsyncListView list="{getAllProdukResult.lastResult}"/>
+			</s:DataGrid>
+		</s:NavigatorContent>
+		<s:NavigatorContent width="100%" height="100%" label="ADMIN">
+			<s:DataGrid id="dataGrid5" x="28" y="30" width="703"
+						creationComplete="dataGrid5_creationCompleteHandler(event)"
+						requestedRowCount="0">
+				<s:columns>
+					<s:ArrayList>
+						<s:GridColumn dataField="idadmin" headerText="idadmin"></s:GridColumn>
+						<s:GridColumn dataField="first_name" headerText="first_name"></s:GridColumn>
+						<s:GridColumn dataField="last_name" headerText="last_name"></s:GridColumn>
+						<s:GridColumn dataField="address" headerText="address"></s:GridColumn>
+						<s:GridColumn dataField="email" headerText="email"></s:GridColumn>
+						<s:GridColumn dataField="contact" headerText="contact"></s:GridColumn>
+						<s:GridColumn dataField="username" headerText="username"></s:GridColumn>
+						<s:GridColumn dataField="password" headerText="password"></s:GridColumn>
+					</s:ArrayList>
+				</s:columns>
+				<s:typicalItem>
+					<fx:Object address="address1" contact="contact1" email="email1"
+							   first_name="first_name1" idadmin="idadmin1" last_name="last_name1"
+							   password="password1" username="username1"></fx:Object>
+				</s:typicalItem>
+				<s:AsyncListView list="{getAllAdminResult.lastResult}"/>
+			</s:DataGrid>
+		</s:NavigatorContent>
+		<s:NavigatorContent width="100%" height="100%" label="KEGIATAN">
+			<s:DataGrid id="dataGrid6" x="290" y="34" requestedRowCount="4">
+				<s:columns>
+					<s:ArrayList>
+						<s:GridColumn dataField="KODEPRODUK" headerText="KODEPRODUK"></s:GridColumn>
+						<s:GridColumn dataField="NAMAPRODUK" headerText="NAMAPRODUK"></s:GridColumn>
+						<s:GridColumn dataField="GAMBAR" headerText="GAMBAR"></s:GridColumn>
+					</s:ArrayList>
+				</s:columns>
+				<s:typicalItem>
+					<fx:Object GAMBAR="GAMBAR1" KODEPRODUK="KODEPRODUK1" NAMAPRODUK="NAMAPRODUK1"></fx:Object>
+				</s:typicalItem>
+				<s:AsyncListView list="{getAllProdukResult.lastResult}"/>
+			</s:DataGrid>
+		</s:NavigatorContent>
+	</mx:ViewStack>
+	<s:VideoPlayer x="243" y="220"/>
+</s:Application>

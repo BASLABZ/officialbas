@@ -1,0 +1,170 @@
+body{
+	margin:0 0 0 0;
+	background-color:#FFFFFF;
+/*	background-image:url(../images/login-whisp.png);
+*/	background-position:center;
+	background-repeat:no-repeat;
+	font-family:Arial, Helvetica, sans-serif;	
+}
+#bgimg img{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top:0;
+	z-index: -1;
+	}
+#atas{
+	background-color:#CCCCCC;
+	padding:6px;
+
+/*	-moz-box-shadow: 0 0 30px #888;
+	-webkit-box-shadow: 0 0 30px #888;
+	box-shadow: 0 0 30px #CCC;*/
+}
+#login_banner{
+	margin-top:7%;
+	margin-left:auto;
+	margin-right:auto;
+	width:400px;	
+}
+#left{
+	width: 170px;
+	float: left;
+	}
+#right{
+	
+	float: left;
+	}
+#login_container{
+	width:400px;
+	float:right;
+	margin-right:100px;	
+	margin-top:auto;
+	margin-bottom:auto;
+	opacity: 0.9;
+	border: 5px #999999 solid;
+	z-index: 299;
+}
+
+#login_user{
+	background-color:#AE0000;
+	color:#000;
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+	padding:10px;
+	
+/*	
+	-moz-box-shadow: 0 0 30px #F30;
+	-webkit-box-shadow: 0 0 30px #F30;*/
+	
+}
+#login_box{
+	height:350px;
+	padding:20px;
+
+}
+  
+.inputtextbox{
+	border:1px solid #666;
+	font-size: 1.3em;
+	color:#333;
+	width:230px;
+	padding:4px;
+	background-image:url(../img/business_user.png);
+	background-repeat:no-repeat;
+	background-position:left;
+	padding-left:30px; 
+}
+.input_password{
+	border:1px solid #666;
+	font-size: 1.3em;
+	color:#333;
+	width:230px;
+	padding:4px;
+	background-image:url(../img/lock.png);
+	background-size: 19px;
+	background-repeat:no-repeat;
+	background-position:left;
+	padding-left:30px; 
+}
+.button-primary{
+	padding:4px 10px;
+	border:none;
+	font-size:13px;
+	color:#FFF;
+	font-weight:bold;
+	border-width:0px;
+	border-style:solid;
+	-moz-border-radius:2px;
+	-khtml-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+	cursor:pointer;
+	text-decoration:none;
+	margin-top:0px;
+	
+}
+.button-primary:hover{
+	background: #feccb1; /* Old browsers */
+	background: -moz-linear-gradient(top,  #feccb1 0%, #f17432 50%, #ea5507 51%, #fb955e 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#feccb1), color-stop(50%,#f17432), color-stop(51%,#ea5507), color-stop(100%,#fb955e)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #feccb1 0%,#f17432 50%,#ea5507 51%,#fb955e 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #feccb1 0%,#f17432 50%,#ea5507 51%,#fb955e 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #feccb1 0%,#f17432 50%,#ea5507 51%,#fb955e 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #feccb1 0%,#f17432 50%,#ea5507 51%,#fb955e 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#fb955e',GradientType=0 ); /* IE6-9 */
+
+}
+form .submit,.alignright{float:left;}form p{margin-bottom:24px;}
+
+label
+{
+	min-width: 60px;
+	padding:2px;
+	margin-top:1px;
+	margin-bottom:1px;
+	float: left;
+	display: block;
+	color:#333;
+	font-weight:bold;
+}
+
+
+
+#footer{
+	clear:both;
+	color:#FFF;
+	text-align:right;
+	padding-top:3px;
+	padding-bottom:3px;
+	width:100%; 
+	bottom:0%;
+	/*margin-bottom:10px;*/
+	
+}
+
+#fix_footer{
+ 	position:fixed;
+	bottom: 0;
+	height: 25px;
+	background: #258dc8; /* Old browsers */
+	background: -moz-linear-gradient(top, #258dc8 0%, #258dc8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#258dc8), color-stop(100%,#258dc8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #258dc8 0%,#258dc8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #258dc8 0%,#258dc8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #258dc8 0%,#258dc8 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #258dc8 0%,#258dc8 100%); /* W3C */
+	width: 100%;
+	color:#FFF;
+	font-weight:bold;
+}
+#fix_footer_kiri{
+	float:left;
+	
+	width:85%;	
+}
+#fix_footer_kanan{
+	float:right;
+	width:13%;	
+}

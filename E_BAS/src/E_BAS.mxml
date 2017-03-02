@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" 
+			   xmlns:mx="library://ns.adobe.com/flex/mx" minWidth="955" minHeight="600">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<s:DataGrid x="174" y="101" width="356" requestedRowCount="4">
+		<s:columns>
+			<s:ArrayList>
+				<s:GridColumn dataField="first_name" headerText="IDADMIN"></s:GridColumn>
+				<s:GridColumn dataField="first_name" headerText="FIRSTNAME"></s:GridColumn>
+				<s:GridColumn dataField="last_name" headerText="LASTNAME"></s:GridColumn>
+			</s:ArrayList>
+		</s:columns>
+		<s:typicalItem>
+			<fx:Object idadmin="first_name" dataField2="first_name" dataField3="address"></fx:Object>
+		</s:typicalItem>
+		<s:ArrayList>
+			<fx:Object idadmin="first_name" dataField2="first_name" dataField3="address"></fx:Object>
+			
+		</s:ArrayList>
+	</s:DataGrid>
+</s:Application>

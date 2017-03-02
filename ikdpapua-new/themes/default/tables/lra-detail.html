@@ -1,0 +1,54 @@
+		<!-- START RESPONSIVE TABLES -->
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel panel-default">
+
+					<div class="panel-heading">
+						<h3 class="panel-title">Laporan Realisasi Anggaran {KABUPATEN} Tahun {TAHUN}</h3>
+					</div>
+
+					<div class="panel-body panel-body-table">
+                      <div class='table-responsive'>
+					    <form action='#' name='frmAPBD' class='frmAPBD' method='post' accept-charset='UTF-8'>
+							<input type='hidden' name='kodepemda' value='{KODEPEMDA}'>
+							<input type='hidden' name='tahun' value='{TAHUN}'>
+							<input type='hidden' name='do' value='{DO}'>
+							<table id='tblAPBD' class='table table-hover table-condensed table-bordered table-striped table-actions' style='font-size: 12px;' >
+							<thead >
+							<tr>
+								<th style='vertical-align: middle;' rowspan="2" class="text-center" >Nomor Urut</th>
+								<th style='vertical-align: middle;' rowspan="2" class="text-center" >Uraian</th>
+								<th colspan="2" class="text-center" >Jumlah(Rp)</th>
+								<th colspan="2" class="text-center" >Lebih / Kurang</tr>
+							</tr>
+							<tr>
+								<th class="text-center" >Setelah<br />Perubahan</th>
+								<th style='vertical-align: middle;' class="text-center" >Realisasi</th>
+								<th style='vertical-align: middle;' class="text-center" >(Rp)</th>
+								<th style='vertical-align: middle;' class="text-center" >%</th>
+							</tr>
+							</thead>
+
+							<tbody id='tbodyData'>
+								{ROWDATA}
+							</tbody>
+							</table>
+						</form>
+                      </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END RESPONSIVE TABLES -->	
+		<!-- START MENU -->		
+		<div class='row'>
+		  <div class='col-md-12'>
+			<div class='panel panel-default'>
+				<div class='panel-body'>
+				<a href='{ROOT_URL}lra.htm' class='btn btn-success btn-sm' data-toggle='tooltip' data-placement='bottom' title='' data-original-title='Kembali'><i class='fa fa-chevron-left'></i> Kembali</a>
+
+				</div>
+			</div>
+		  </div>
+		</div>	
+		<!-- END MENU -->	

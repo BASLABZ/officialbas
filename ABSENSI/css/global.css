@@ -1,0 +1,110 @@
+/*	
+ * Global Style.
+ * Designed by Eren Alba Kaunang
+ * Copyright 2012 Global Intermedia
+ *
+ **/
+
+@charset "utf-8";
+
+body{
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+input,textarea{
+	outline:none;
+}
+
+img{
+	border:none;
+}
+
+a{
+	text-decoration:none;
+}
+
+p{
+	margin:0;
+	padding:0;
+}
+
+.hide{
+	display:none;
+}
+
+.abs{
+	position:absolute;
+}
+
+.rltv{
+	position:relative;
+}
+
+.fleft{
+	float:left;
+}
+
+.fright{
+	float:right;
+}
+
+.link{
+	color:#400080;
+}
+
+
+.merahfont{
+	color:#CA0000;
+}
+
+.merahborder{
+	border:solid 1px #CA0000;
+}
+
+.kuningfont{
+	color:#E7B903;
+}
+
+._h{
+	color:#CA0000;
+}
+
+.transbg{
+	-moz-transition:background 0.5s ease-in, border 0.4s ease-in;
+	-webkit-transition:background 0.5s ease-in, border 0.4s ease-in;
+	-ms-transition:background 0.5s ease-in, border 0.4s ease-in;
+	-o-transition:background 0.5s ease-in, border 0.4s ease-in;
+	transition:background 0.5s ease-in, border 0.4s ease-in;
+}
+
+p.defaultitle{
+	font-size:15px;
+	font-weight:bold;
+	clear:both;
+}
+p.openpage{
+	font-size:11px;
+	font-weight:normal;
+	clear:both;
+	font-style:italic;
+}
+p.openpage a:hover{
+	color:#424242;
+}
+.defaultshadowbox{
+	box-shadow:0 0 3px #CCC;
+	-webkit-box-shadow:0 0 3px #CCC;
+	-moz-box-shadow:0 0 3px #CCC;
+}
+
+.boxhover{
+	-moz-transition:background 0.4s ease-in, border 0.4s ease-in;
+	-webkit-transition:background 0.4s ease-in, border 0.4s ease-in;
+	-ms-transition:background 0.4s ease-in, border 0.4s ease-in;
+	-o-transition:background 0.4s ease-in, border 0.4s ease-in;
+	transition:background 0.4s ease-in, border 0.4s ease-in;
+	background-color: #ffffff;
+}
+.boxhover:hover{
+	background:#F1F1F1;
+}

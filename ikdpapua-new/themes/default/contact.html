@@ -1,0 +1,68 @@
+						<div class="row">
+							<div class="col-md-12">
+								<h3 class="section-title">Kontak Kami</h3>
+								<p>
+								Kami siap mendengarkan Anda dan membantu menjawab pertanyaan Anda. Kami dapat dihubungi melalui email, telepon, fax atau melalui pos.
+								</p>
+								<div id="mapCanvas" style='height: 300px' ></div>
+							</div>
+							<div class="col-md-12">
+								<div class="row">
+									<div class="col-md-6">
+										<h3 class="section-title">Informasi Kantor</h3>
+										<div class="contact-info">
+											<h5>Alamat</h5>
+											<p>{CONTACT_ADDR}</p>
+											
+											<h5>Email</h5>
+											<p>{CONTACT_EMAIL}</p>
+											
+											<h5>Telephone</h5>
+											<p>{CONTACT_TELP}</p>
+
+											<h5>Fax</h5>
+											<p>{CONTACT_FAX}</p>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<h3 class="section-title">Jam Kerja</h3>
+										<div class="contact-info">
+											<h5>Senin - Jumat</h5>
+											<p>08:00 - 16:00</p>
+											
+											<h5>Sabtu</h5>
+											<p>Libur</p>
+											
+											<h5>Minggu</h5>
+											<p>Libur</p>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+	<script type="text/javascript">
+		function initialize() {
+		  var myLatlng = new google.maps.LatLng(-2.5368,140.7150);
+		  var mapOptions = {
+			zoom: 16,
+			scrollwheel: false,
+			center: myLatlng,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		  }
+		  var map = new google.maps.Map(document.getElementById('mapCanvas'), mapOptions);
+
+		  var marker = new google.maps.Marker({
+			  position: myLatlng,
+			  map: map,
+			  animation: google.maps.Animation.DROP,
+			  title: 'Lokasi'
+		  }); 	  
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+
+
+	</script>						
+

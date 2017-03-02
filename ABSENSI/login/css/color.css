@@ -1,0 +1,123 @@
+/*	
+ * Color Libraries.
+ * + Color Gradients.
+ * Designed by Eren Alba Kaunang
+ * Copyright 2012 Global Intermedia
+ *
+ **/
+ 
+@charset "utf-8";
+
+
+/* MERAH */
+/* ------------------------------------------ */
+	.merah, .statis-merah{
+		background:#CA0000;
+		background: -moz-linear-gradient(100% 100% 90deg, #910000, #F90000);
+		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F90000), to(#910000));
+		background: -webkit-linear-gradient(#F90000, #910000);
+		background: -o-linear-gradient(#F90000, #910000);
+	}
+	.bor-bot-merah{
+		border-bottom:solid 1px #AE0000;
+	}
+	.bor-top-merah{
+		border-top:solid 1px #AE0000;
+	}
+	.fmerah{
+		color:#AE0000;
+	}
+
+
+/* HITAM */
+/* ------------------------------------------ */
+	.hitam, .statis-hitam{
+		background:#191919;
+		background: -moz-linear-gradient(100% 100% 90deg, #191919, #616161);
+		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#616161), to(#191919));
+		background: -webkit-linear-gradient(#616161, #191919);
+		background: -o-linear-gradient(#616161, #191919);
+	}
+	.bor-bot-hitam{
+		border-bottom:solid 1px #000;
+	}
+	.bor-top-hitam{
+		border-top:solid 1px #000;
+	}
+	.fhitam{
+		color:#000;
+	}
+
+
+/* KUNING */
+/* ------------------------------------------ */
+	.kuning{
+		background:#F9DA04;
+		background: -moz-linear-gradient(100% 100% 90deg, #F9DA04, #FFFF3C);
+		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFF3C), to(#F9DA04));
+		background: -webkit-linear-gradient(#FFFF3C, #F9DA04);
+		background: -o-linear-gradient(#FFFF3C, #F9DA04);
+	}
+	
+
+/* ORANYE */
+/* ------------------------------------------ */
+	.oranye, .statis-oranye{
+		background:#F08A00;
+		background: -moz-linear-gradient(100% 100% 90deg, #F08A00, #F4AB00);
+		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F4AB00), to(#F08A00));
+		background: -webkit-linear-gradient(#F4AB00, #F08A00);
+		background: -o-linear-gradient(#F4AB00, #F08A00);
+	}
+	.foranye{
+		color:#DF8100;
+	}
+	.bor-bot-oranye{
+		border-bottom:solid 1px #DF8100;
+	}
+	.bor-top-oranye{
+		border-top:solid 1px #DF8100;
+	}
+
+
+/* BIRU */
+/* ------------------------------------------ */
+	.biru, .statis-biru{
+		background:#0086C6;
+		background: -moz-linear-gradient(100% 100% 90deg, #0070A6, #0086C6);
+		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0086C6), to(#0070A6));
+		background: -webkit-linear-gradient(#0086C6, #0070A6);
+		background: -o-linear-gradient(#0086C6, #0070A6);
+	}
+	.fbiru{
+		color:#0070A6;
+	}
+	.bor-bot-biru{
+		border-bottom:solid 1px #178BFF;
+	}
+	.bor-top-biru{
+		border-top:solid 1px #178BFF;
+	}
+
+
+/* ABU-ABUT */
+/* ------------------------------------------ */
+	.abu-abu-no-grad{
+		background:#EAEAEA;
+	}
+	.abu-abu, .statis-abu-abu{
+		background:#EAEAEA;
+		background: -moz-linear-gradient(100% 100% 90deg, #C0C0C0, #EAEAEA);
+		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#EAEAEA), to(#C0C0C0));
+		background: -webkit-linear-gradient(#EAEAEA, #C0C0C0);
+		background: -o-linear-gradient(#EAEAEA, #C0C0C0);
+	}
+	.fabu-abu{
+		color:#0070A6;
+	}
+	.bor-bot-abu-abu{
+		border-bottom:solid 1px #005BB7;
+	}
+	.bor-top-abu-abu{
+		border-top:solid 1px #005BB7;
+	}
